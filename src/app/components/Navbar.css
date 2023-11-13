@@ -5,7 +5,7 @@
     color: aliceblue;
     padding: 10px auto 10px auto;
     align-items: center; 
-    border-bottom: 5px solid rgba(160, 179, 204, 0.486);
+    border-bottom: 4px solid rgba(160, 179, 204, 0.486);
     position: fixed;
     width: 100vw;
 }
@@ -23,8 +23,7 @@
     display: flex;
     width: 50%;
     justify-content: space-between;
-    /* margin-left: 5%; */
-
+    font-size: 1.5rem;
 }
 .nav__sections a {
     height: 2rem;
@@ -96,4 +95,14 @@ svg{
   .texto-con-linea:hover{
     /* border: none; */
     font-size: larger;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9);
+  }
+
+
+
+  @media  screen and (max-width:1200px){
+    .nav__sections{
+        display: none;
+    }
   }

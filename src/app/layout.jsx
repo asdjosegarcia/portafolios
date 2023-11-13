@@ -1,8 +1,24 @@
   import Navbar from '@/app/components/Navbar'
-  import { Inter } from 'next/font/google'
+  import {  Roboto,Rubik } from 'next/font/google'
+
   import './globals.css'
   
-  const inter = Inter({ subsets: ['greek'] })
+    export const roboto = Roboto({
+      weight: ['400', '700'],
+      style: ['normal', 'italic'],
+      subsets: ['latin'],
+      display: 'swap',
+
+    })
+    export const rubik = Rubik({
+      weight: ['400', '700'],
+      style: ['normal', 'italic'],
+      subsets: ['latin'],
+      display: 'swap',
+
+    })
+
+
   
   export const metadata = {
     title: 'Create Next App',
@@ -12,10 +28,14 @@
   export default function RootLayout({ children }) {
     return (
       <html lang="en">
-        <body className={inter.className}>
+        <body className={rubik.className}>
         <Navbar></Navbar>
           {children}
           </body>
       </html>
     )
   }
+
+ 
+
+ 
