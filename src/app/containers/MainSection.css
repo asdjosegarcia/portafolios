@@ -1,0 +1,19 @@
+.mainSection__container{
+    padding-top: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+.main__greeting{
+    font-weight: 900;
+}
+.main__name{
+    font-size: 7rem;
+    letter-spacing: .5rem;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -2px -2px 4px rgba(255, 255, 255, 0.9); */
+    text-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+}

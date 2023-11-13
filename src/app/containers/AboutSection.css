@@ -1,0 +1,6 @@
+.aboutSection__container{
+    width: 100%;
+    /* background-color: red; */
+    border-top: 10px solid gray;
+    height: 90vh;
+}
