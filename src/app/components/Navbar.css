@@ -1,0 +1,87 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(10, 11, 26);
+    color: aliceblue;
+    padding: 10px 3rem 10px 3rem;
+    align-items: center; 
+    border-bottom: 5px solid rgba(160, 179, 204, 0.486);
+}
+.nav__name--email {
+    font-size: larger;
+    text-align: end;
+    color: rgba(240, 248, 255, 0.829);
+}
+.nav__name--email h3,h4{
+    margin: 0px;
+}
+.nav__sections{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+.nav__sections a {
+    height: 2rem;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 192, 250, 0.116);
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__sections a:hover{
+    color: white;
+}
+.nav__sections__a--objetivos svg{
+    transform: rotate(180deg);
+}
+
+
+
+.nav__github--linkedin{
+    font-weight: bolder;
+    margin: 0px;
+}
+.nav__github--linkedin a{
+    margin: .5rem;
+    color: rgba(240, 248, 255, 0.829);
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    padding: none;
+}
+svg{
+    fill: rgba(240, 248, 255, 0.829);
+}
+
+
+
+
+
+/*///////////////////////////////////////////////////// animaciones  */
+.texto-con-linea {
+    position: relative; /* para que el contenedor con la linea con position absolute se acople */
+    display: inline-block; /*  */
+    cursor: pointer;/* cambia el cursor para indicar que este elemto es interactivo */
+  }
+
+  .linea {
+    position: absolute; /* se posiviona el div con respecto a el contendor padre*/
+    bottom: 0; /* se mueve el ccontenedor al fondo */
+    left: 50%;/* inicialmente estara al centro del contendor */
+    transform: translateX(-50%);  /* se va a ir acomodando a medida que crezaca */
+    width: 0; /* la linea inicia con un ancho de 0 */
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .texto-con-linea:hover .linea {
+    width: 100%; 
+    border: none;
+  }
