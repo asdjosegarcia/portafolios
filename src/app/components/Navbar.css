@@ -2,12 +2,17 @@
     display: flex;
     justify-content: space-between;
     background: rgba(10, 11, 26, 0.904);
+    /* background-color: blur(5px);; */
+    backdrop-filter: blur(10px);
     color: aliceblue;
     padding: 10px auto 10px auto;
     align-items: center; 
     border-bottom: 4px solid rgba(160, 179, 204, 0.486);
     position: fixed;
     width: 100vw;
+    /* box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); */
+    /* filter: blur(5px); */
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.096);
 }
 
 .nav__name--email {
