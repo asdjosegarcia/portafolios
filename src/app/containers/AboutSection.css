@@ -12,13 +12,14 @@
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: 
     "title title "
     "section1 section2"
     "section1 section2"
     "title2   title2"
     "skills   skills "
+    /* "skills   skills " */
     ;
     border-radius: 10px;
     padding: 20px;
@@ -65,13 +66,42 @@ grid-area: title2;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* padding:5% 20%; */
+    flex-wrap: wrap; /* que el contenido se distribulla en varias filas */
+    padding:5% 0;
 }
 .about__skills__container svg{
     height: 5rem;
     width: 5rem;
+    margin: 3.3rem;
 }
+.about__skills__container .skill__card{
+    margin: 1rem;
+    border: 3px solid rgb(54, 120, 151);/*  rgb(44, 96, 121)*/
+    border-radius: 5px;
+    box-shadow: .5rem .3rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9) ;
+
+}
+
 .about__skills__container .nextjs--img {
     background-color: black;
     border-radius: 50%;
+}
+.about__skills__container .js--img {
+    /* background-color: black; */
+    border-radius: 25px;
+}
+.about__skills__container .github--img {
+    background-color: white;
+    border-radius: 50%;
+    border: black 2px solid;
+    padding: 3px;
+    height: 70px;
+    width: 70px;
+}
+.about__skills__container .skill__card p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9);
+
 }
