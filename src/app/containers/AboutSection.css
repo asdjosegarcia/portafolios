@@ -9,25 +9,32 @@
 }
 
 .aboutSection__info{
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: 
     "title title "
     "section1 section2"
     "section1 section2"
+    "title2   title2"
+    "skills   skills "
     ;
     border-radius: 10px;
     padding: 20px;
     background-color: #0f172a;
     border: 2px solid rgb(44, 96, 121);
 }
-.aboutSection__info h2{
-    grid-area: title;
+.about__title{
+    font-weight: bold;
     text-align: center;
     font-size: 2.5rem;
-    font-weight: bold;
 }
+.about__title--about {
+    grid-area: title;
+    padding-bottom: 4rem;
+}
+
 .aboutSection__info img{
     grid-area: section1;
     /* max-width: 100%; */
@@ -36,17 +43,35 @@
     border-radius: 10px;
 }
 .aboutSection__info ul{
+    margin: 0px;
     grid-area: section2;
     font-size: 1.7rem;
     list-style: none;
 }
-/* .aboutSection__info .icons{
-    width: 1.5rem;
-    height: 1.5rem;
-    fill: red; 
-} */
-svg{
-    width: 1.5rem;
-    height: 1.5rem;
+.aboutSection__info ul li p{
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+.aboutSection__info svg{
+    width: 1.7rem;
+    height: 1.7rem;
     fill: aliceblue; 
+}
+.about__title--skills{
+grid-area: title2;
+}
+.about__skills__container{
+    grid-area: skills;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* padding:5% 20%; */
+}
+.about__skills__container svg{
+    height: 5rem;
+    width: 5rem;
+}
+.about__skills__container .nextjs--img {
+    background-color: black;
+    border-radius: 50%;
 }
