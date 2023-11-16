@@ -105,3 +105,18 @@ grid-area: title2;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9);
 
 }
+
+/*///////////////////////////////////////////////////estados  */
+.about__skills__container .learning{
+        background-color: #020617;
+        /* box-shadow: none; */
+    box-shadow: .5rem .3rem 0px #64748bb2, 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.068) ;
+
+}
+.about__skills__container .learning svg{
+    fill: #475569 ;
+}
+.about__skills__container .learning p{ 
+    color: #64748b ;
+    text-shadow:none
+}
