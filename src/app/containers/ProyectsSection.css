@@ -11,28 +11,23 @@
 .proyects__container{
     margin-top: 2rem;
     width: 60%;
-    display: grid;
+/*     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(6, auto);
     grid-template-areas: 
     "title title "
-    "section1 section2"
-    "section1 section2"
-    "title2   title2"
     "skills   skills "
-    /* "skills   skills " */
-    ;
+    ; */
     border-radius: 10px;
     padding: 20px;
     background-color: #0f172a;
     border: 2px solid rgb(44, 96, 121);
 }
 .proyects__container .proyects__title {
-    grid-area: title;
     text-align: center;
+    font-size: 2.5rem;
 }
 .proyects__container .proyects__cards__container{
-    grid-area: skills;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -44,7 +39,6 @@
     border: 3px solid rgb(54, 120, 151);/*  rgb(44, 96, 121)*/
     border-radius: 5px;
     box-shadow: .5rem .3rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9) ;
-    /* padding: .7rem; */
     text-align: center;
 }
 .proyect__card .card__title{
@@ -52,13 +46,37 @@
     text-decoration: underline;
 }
 .card__button{
-    background-color: #334155;
+    background-color: #1e293b;
     border-radius: 5px;
     border: 3px solid rgb(54, 120, 151);
-    padding: 5px;
+    padding: 15px 20px;
     margin: 20px;
-    color: aliceblue;
+    color: aliceblue;  
+    font-size: 1.2rem;
+}
+.card__button:hover{
+    background-color: #0f172a;
 }
 .proyect__card img{
     width: 25rem;
+    border-radius: 10px;
+    margin: 0  1rem ;
+
+}
+.proyect__card .proyect__skills__container{
+    display: flex;
+    /* justify-content: baseline; */
+    margin: 0  1rem ;
+
+
+}
+.proyect__card .proyect__skills{
+    /* background-color: ; */
+    /* border: ; */
+    width: min-content;
+    padding: 5px;
+    color: aliceblue;
+    border: 3px solid rgb(44, 96, 121);
+    border-radius: 5px;
+    margin: 0.5rem .7rem .5rem 0 ;
 }
