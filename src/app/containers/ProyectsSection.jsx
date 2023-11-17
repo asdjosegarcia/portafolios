@@ -9,10 +9,14 @@ const ProyectsSection = () => {
       <div className='proyects__cards__container'>
         <div className='proyect__card'>
           <h2 className='card__title'>Ley de ohm</h2>
-          <img src="" alt="" />
+          <img src="/img/ley-de-ohm_preview.jpg" alt="" />
           <p></p>
-          <button>Probar</button>
-          <button>{"codigo</>"}</button>
+          <a href="https://asdjosegarcia.github.io/ley-de-ohm/" target="_blank">
+          <button className='card__button'>Probar</button>
+          </a>
+          <a href="" target="_blank">
+          <button className='card__button'>{"codigo </>"}</button>
+          </a>
         </div>
 
       </div>

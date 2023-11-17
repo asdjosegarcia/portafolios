@@ -111,6 +111,7 @@ grid-area: title2;
         background-color: #020617;
         /* box-shadow: none; */
     box-shadow: .5rem .3rem 0px #64748bb2, 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.068) ;
+    position: relative;
 
 }
 .about__skills__container .learning svg{
@@ -118,5 +119,23 @@ grid-area: title2;
 }
 .about__skills__container .learning p{ 
     color: #64748b ;
-    text-shadow:none
+    text-shadow:none;
+}
+.about__skills__container .learning .card__message{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #00000000;
+    color:#00000000 ;
+
+}
+
+.about__skills__container .learning .card__message:hover{
+    background-color: rgba(0, 0, 0, 0.623);
+    color: #94a3b8;
+  /* z-index: 1; */
 }
