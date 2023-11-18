@@ -144,6 +144,6 @@ grid-area: title2;
 
 .about__skills__container .learning .card__message:hover{
     background-color: rgba(0, 0, 0, 0.623);
+    backdrop-filter: blur(1px);
     color: #94a3b8;
-  /* z-index: 1; */
 }
