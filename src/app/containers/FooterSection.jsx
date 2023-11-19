@@ -7,7 +7,7 @@ import NextjsLogo from '../SVG/NextjsLogo'
 
 const FooterSection = () => {
   return (
-    <div className='footerSection__container'>
+    <section id="footerSection" className='footerSection__container'>
       <div className='footer__created--with'>
       <p>Proyecto creado con</p>
       <ReactLogo fill={"cbd5e1"}></ReactLogo>
@@ -29,7 +29,7 @@ const FooterSection = () => {
 
 
       </div>
-    </div>
+    </section>
   )
 }
 

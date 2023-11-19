@@ -7,7 +7,7 @@ import ReactLogo from '../SVG/ReactLogo'
 
 const AboutSection = () => {
     return (
-        <section className='aboutSection__container'>
+        <section id="aboutSection" className='aboutSection__container'>
             <div className='aboutSection__info'>
                 <h2 className='about__title about__title--about'>Sobre mí</h2>
                 <img className="about__perfile--picture" src="/img/fakePerfile.jpg" alt="" />

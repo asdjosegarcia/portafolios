@@ -3,7 +3,7 @@ import './ProyectsSection.css'
 
 const ProyectsSection = () => {
   return (
-    <section className='proyectsSection__container'>
+    <section id="proyectsSection" className='proyectsSection__container'>
       <div className='proyects__container'>
         <h2 className='proyects__title'>Proyectos Personales</h2>
         <div className='proyects__cards__container'>
