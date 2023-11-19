@@ -17,7 +17,7 @@ const ProyectsSection = () => {
               <p className='proyect__skills'>CSS</p>
               <p className='proyect__skills'>Webpack</p>
             </div>
-            {/* <p>Este proyecto es una calculador</p> */}
+            <p>Este proyecto es una calculadora de la ley de ohm,<br/> suele ser muy util en proyectos de electronica.</p>
             <a href="https://asdjosegarcia.github.io/ley-de-ohm/" target="_blank">
               <button className='card__button'>{"Probar  >>"}</button>
             </a>

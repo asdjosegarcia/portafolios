@@ -1,8 +1,5 @@
 .aboutSection__container{
     width: 100%;
-    /* background-color: red; */
-    /* border-top: 10px solid gray; */
-    /* height: 90vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,15 +35,12 @@
 
 .aboutSection__info img{
     grid-area: section1;
-    /* max-width: 100%; */
-    /* background-image: url('./fakePerfile.jpg'); */
     height: 360px;
     width: 300px;
     border-radius: 10px;
     justify-self: end;
     margin-right: 15%;
     box-shadow: .5rem .3rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.068) ;
-    /* align-self: center; */
 
 }
 .aboutSection__info ul{
