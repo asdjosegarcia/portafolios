@@ -1,5 +1,9 @@
 body{
-  background-color: #001123 ;
+  /* background-color: #001123 ; */
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,17,35,1) 41%, rgba(0,0,0,1) 100%); 
+
+
   color: rgba(240, 248, 255, 0.993);
   font-smooth: always;/* antualiasing */
   -webkit-font-smoothing: antialiased;/* antualiasing */

@@ -21,14 +21,14 @@ const Navbar = () => {
           Sobre mi
           <div className="linea"></div>
         </a>
-        <a href='' className='nav__sections__a--objetivos texto-con-linea' >
-          <svg height="24" viewBox="0 -960 960 960" width="24"><path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" /></svg>
-          Objetivos
-          <div className="linea"></div>
-        </a>
         <a href='#proyectsSection' className='nav__sections_a--proyectos texto-con-linea' >
           <svg height="24" viewBox="0 -960 960 960" width="24"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" /></svg>
           Proyectos
+          <div className="linea"></div>
+        </a>
+        <a href='' className='nav__sections__a--objetivos texto-con-linea' >
+          <svg height="24" viewBox="0 -960 960 960" width="24"><path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" /></svg>
+          Objetivos
           <div className="linea"></div>
         </a>
       </div>

@@ -3,6 +3,7 @@ import MainSection from './containers/MainSection'
 import AboutSection from './containers/AboutSection'
 import ProyectsSection from './containers/ProyectsSection'
 import FooterSection from './containers/FooterSection'
+import ObjectivesSection from './containers/ObjectivesSection'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <MainSection></MainSection>
         <AboutSection></AboutSection>
         <ProyectsSection></ProyectsSection>
+        <ObjectivesSection></ObjectivesSection>
         <FooterSection></FooterSection>
     </>
   )

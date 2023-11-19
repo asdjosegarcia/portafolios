@@ -1,0 +1,44 @@
+.objectivesSection__container{
+    width: 100%;
+    /* height: 90vh; */
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.objectives__container{
+    margin-top: 2rem;
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    /* background-color: #0f172a; */
+    background-color: #0f172a1a;
+    border: 2px solid rgb(44, 96, 121);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+
+}
+.objectives__container .objectives__title {
+    text-align: center;
+}
+.objectives{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    border: 3px solid rgb(54, 120, 151);/*  rgb(44, 96, 121)*/
+    border-radius: 5px;
+    box-shadow: .5rem .3rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9) ;
+    /* text-align: center */
+    margin: 0px;
+}
+.objectives p  {
+    margin: 10px;
+}
+.objectives ul{
+    text-align: start
+
+    /* list-style: none; */
+}
