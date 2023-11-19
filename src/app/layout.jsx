@@ -28,6 +28,10 @@
   export default function RootLayout({ children }) {
     return (
       <html lang="en">
+        <head>
+          <link rel="stylesheet" href="/public/favicon.ico" />
+          <title>@asdjosegarcia</title>
+        </head>
         <body className={rubik.className}>
         <Navbar></Navbar>
           {children}

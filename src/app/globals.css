@@ -1,6 +1,9 @@
 body{
   background-color: #001123 ;
   color: rgba(240, 248, 255, 0.993);
+  font-smooth: always;/* antualiasing */
+  -webkit-font-smoothing: antialiased;/* antualiasing */
+  -moz-osx-font-smoothing: grayscale;/* antualiasing */
 }
 /* rgba(59,130,246,.5) muy buen color pero no */
 
