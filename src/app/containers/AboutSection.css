@@ -69,10 +69,16 @@ grid-area: title2;
     flex-wrap: wrap; /* que el contenido se distribulla en varias filas */
     padding:5% 0;
 }
-.about__skills__container svg{
-    height: 5rem;
-    width: 5rem;
+.about__skills__container svg {
     margin: 3.3rem;
+    width: 5rem;
+    height: 5rem;
+}
+.skill__card img{
+    margin: 3.3rem;
+    box-shadow: none;
+    width: 5rem;
+    height: 5rem;
 }
 .about__skills__container .skill__card{
     margin: 1rem;
@@ -94,6 +100,8 @@ grid-area: title2;
     height: 70px;
     width: 70px;
 }
+
+
 .about__skills__container .skill__card p{
     text-align: center;
     font-size: 1.5rem;
@@ -134,7 +142,7 @@ grid-area: title2;
     backdrop-filter: blur(1px);
     color: #94a3b8;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .aboutSection__info{
         width: 90%;
         display: grid;
@@ -159,9 +167,13 @@ grid-area: title2;
     .skill__card svg{
         margin: 2rem;   
     }
+    .skill__card img{
+        margin: 2rem;   
+
+    }
 
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 .skill__card{
     box-shadow: .5rem .3rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9) ;
 }

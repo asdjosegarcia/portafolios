@@ -68,7 +68,7 @@
     margin: 0.5rem .7rem .5rem 0 ;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .proyects__container{
         width: 90%;
     }
