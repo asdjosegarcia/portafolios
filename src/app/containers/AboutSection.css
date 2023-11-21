@@ -171,7 +171,9 @@ grid-area: title2;
         margin: 2rem;   
 
     }
-
+    .about__skills__container .learning .card__message{
+        font-size: 1.5rem;
+    }
 }
 @media screen and (min-width: 1100px) {
 .skill__card{

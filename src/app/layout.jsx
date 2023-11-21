@@ -31,7 +31,7 @@
     return (
       <html lang="en">
         <head>
-          <link rel="stylesheet" href="/public/favicon.ico" />
+          <link rel="image/x-icon " href="/favicon.ico" />
           <title>@asdjosegarcia</title>
         </head>
         <body className={rubik.className}>
