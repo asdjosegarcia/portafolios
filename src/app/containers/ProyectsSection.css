@@ -51,6 +51,9 @@
     width: 50%;
     border-radius: 10px;
     margin: 0  1rem ;
+}
+.proyect__card p{
+    font-size: 1.3rem;
 
 }
 .proyect__card .proyect__skills__container{
