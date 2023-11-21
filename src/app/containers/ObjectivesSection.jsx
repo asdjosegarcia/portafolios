@@ -3,7 +3,7 @@ import './ObjectivesSection.css'
 
 const ObjectivesSection = () => {
   return (
-    <section className='objectivesSection__container'>
+    <section id='objectivesSection' className='objectivesSection__container'>
         <div className='objectives__container'>
         <h2 className='objectives__title'>Objetivos</h2>
         <div className='objectives'>
