@@ -38,7 +38,7 @@ const ProyectsSection = () => {
               <p className='proyect__skills'>PostgresSQL</p>
               <p className='proyect__skills'>Prisma</p>
             </div>
-            <p>Este proyecto es rompecabezas basado en el juego 15,<br /> suele ser muy util en proyectos de electronica.</p>
+            <p>Este proyecto es rompecabezas basado en el juego 15.<br />NO ESTA COMPLETADO</p>
             <a href="https://jigsaw-asdjosegarcia.vercel.app/" target="_blank">
               <button className='card__button'>{"Probar  >>"}</button>
             </a>
