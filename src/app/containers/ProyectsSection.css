@@ -47,6 +47,9 @@
 .card__button:hover{
     background-color: #0f172a;
 }
+.proyect__card{
+    width: 100%;
+}
 .proyect__card img{
     width: 50%;
     border-radius: 10px;
@@ -58,6 +61,7 @@
 }
 .proyect__card .proyect__skills__container{
     display: flex;
+    flex-wrap: wrap;
     margin: 0  1rem ;
 
 
