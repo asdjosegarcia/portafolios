@@ -63,6 +63,13 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0  1rem ;
+    /* align-self: center; */
+    /* align-items: center; */
+    /* width: 50%; */
+    /* flex-direction: row; */
+    /* align-: center; */
+    justify-content: center;
+    
 
 
 }
