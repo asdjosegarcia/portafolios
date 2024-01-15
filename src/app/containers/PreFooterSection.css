@@ -1,0 +1,11 @@
+.pre-footer__container{
+    padding-top: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
