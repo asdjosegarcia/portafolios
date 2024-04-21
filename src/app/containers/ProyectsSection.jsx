@@ -51,13 +51,11 @@ const ProyectsSection = () => {
             <h2 className='card__title'>Open-Comerce</h2>
             <img src="/img/open-comerce.png"  alt="" />
             <div className='proyect__skills__container'>
-              <p className='proyect__skills'>HTML</p>
-              <p className='proyect__skills'>CSS</p>
-              <p className='proyect__skills'>JS</p>
-              <p className='proyect__skills'>Nextjs</p>
-              <p className='proyect__skills'>Webpack</p>
-              <p className='proyect__skills'>PostgresSQL</p>
-              <p className='proyect__skills'>Prisma</p>
+              {/* <p className='proyect__skills'>HTML</p> */}
+              {/* <p className='proyect__skills'>CSS</p> */}
+              <p className='proyect__skills'>React 18.2.0</p>
+              <p className='proyect__skills'>Nextjs 14.1.4</p>
+              <p className='proyect__skills'>Prisma 5.12.1</p>
             </div>
             <p>Este proyecto es un market-place COMPLETO,<br /> cuenta con varias funcionalidades al estilo Mercado Libre<br /> incluyendo perfiles de usuarios </p>
             <a href="https://open-comerce.vercel.app/" target="_blank">
