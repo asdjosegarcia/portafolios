@@ -46,6 +46,27 @@ const ProyectsSection = () => {
               <button className='card__button'>{"Codigo  </>"}</button>
             </a>
           </div>
+          <div className='proyect__card'>
+            {/* ley de hom */}
+            <h2 className='card__title'>Open-Comerce</h2>
+            <img src="/img/open-comerce.png"  alt="" />
+            <div className='proyect__skills__container'>
+              <p className='proyect__skills'>HTML</p>
+              <p className='proyect__skills'>CSS</p>
+              <p className='proyect__skills'>JS</p>
+              <p className='proyect__skills'>Nextjs</p>
+              <p className='proyect__skills'>Webpack</p>
+              <p className='proyect__skills'>PostgresSQL</p>
+              <p className='proyect__skills'>Prisma</p>
+            </div>
+            <p>Este proyecto es un market-place COMPLETO,<br /> cuenta con varias funcionalidades al estilo Mercado Libre<br /> incluyendo perfiles de usuarios </p>
+            <a href="https://open-comerce.vercel.app/" target="_blank">
+              <button className='card__button'>{"Probar  >>"}</button>
+            </a>
+            <a href="https://github.com/asdjosegarcia/generic-ecomerce" target="_blank">
+              <button className='card__button'>{"Codigo  </>"}</button>
+            </a>
+          </div>
 
         </div>
       </div>
