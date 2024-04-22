@@ -11,10 +11,10 @@ const ObjectivesSection = () => {
         <p>Crear productos y servicios tecnologicos:</p>
         <ul>
             <li>Confiables</li>
-            <li>Escalables</li>
             <li>Rentables</li>
-            <li>Funcionales</li>
-            <li>Efectivos</li>
+            <li>Escalables</li>
+            {/* <li>Funcionales</li> */}
+            {/* <li>Efectivos</li> */}
         </ul>
         </div>
         </div>
