@@ -4,6 +4,7 @@ import './AboutSection.css'
 import NextjsLogo from '../SVG/NextjsLogo'
 import ReactLogo from '../SVG/ReactLogo'
 import PrismaLogo from '../SVG/PrismaLogo'
+import AstroLogo from '../SVG/AstroLogo'
 // import GithubLogo from '../SVG/GithubLogo'
 
 
@@ -102,11 +103,14 @@ const AboutSection = () => {
                         <PrismaLogo></PrismaLogo>
                         <p>Prisma</p>
                     </div>
-                    <div className='skill__card learning' >
-                        {/* tailwindcss */}
-                        <div className='card__message'>No disponible. Aun</div>
-                        <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#44a8b3" ><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" /></svg>
-                        <p>tailwindcss</p>
+                    <div className='skill__card ' >
+                        <AstroLogo width="800px"/>
+                        <p>Astro</p>
+                    </div>
+
+                    <div className='skill__card ' >
+                        <svg width="800px" height="800px" viewBox="0 0 32 32"  /* fill="#44a8b3" */   ><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" fill="#44a8b3"/></svg>
+                        <p>TailwindCSS</p>
                     </div>
                     <div className='skill__card learning'>{/* se desactivo el color de fondo para darle un gris*/}
                         {/* TS */}
