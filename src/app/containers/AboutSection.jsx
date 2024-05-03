@@ -12,7 +12,7 @@ const AboutSection = () => {
         <section id="aboutSection" className='aboutSection__container'>
             <div className='aboutSection__info'>
                 <h2 className='about__title about__title--about'>Sobre mí</h2>
-                <img className="about__perfile--picture" src="/img/fakePerfile.jpg" alt="" />
+                <img className="about__perfile--picture" src="/img/linux 2.jpg" alt="" />
                 <ul>
                     <li className='about__item'>
                         <div>
