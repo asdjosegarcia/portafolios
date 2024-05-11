@@ -27,7 +27,7 @@ const ProyectsSection = () => {
           </div>
           <div className='proyect__card'>
             {/* ley de hom */}
-            <h2 className='card__title'>Jigsaw-puzzle</h2>
+            <h2 className='card__title'>Jigsaw Puzzle</h2>
             <img src="/img/jigsaw-preview.jpg"  alt="" />
             <div className='proyect__skills__container'>
               <p className='proyect__skills'>HTML</p>
@@ -35,10 +35,10 @@ const ProyectsSection = () => {
               <p className='proyect__skills'>JS</p>
               <p className='proyect__skills'>Nextjs</p>
               <p className='proyect__skills'>Webpack</p>
-              <p className='proyect__skills'>PostgresSQL</p>
+              <p className='proyect__skills'>PostgreSQL</p>
               <p className='proyect__skills'>Prisma</p>
             </div>
-            <p>Este proyecto es rompecabezas basado en el juego 15.<br /> cuenta con 3 niveles, una tabla de scores mediante API CRUD<br /> y aun no esta completo</p>
+            <p>Este proyecto es rompecabezas basado en el juego 15.<br /> cuenta con 3 niveles, una tabla de scores mediante API CRUD<br /> y aún no esta completo</p>
             <a href="https://jigsaw-asdjosegarcia.vercel.app/" target="_blank">
               <button className='card__button'>{"Probar  >>"}</button>
             </a>
@@ -48,7 +48,7 @@ const ProyectsSection = () => {
           </div>
           <div className='proyect__card'>
             {/* ley de hom */}
-            <h2 className='card__title'>Open-Comerce</h2>
+            <h2 className='card__title'>Open-Trade</h2>
             <img src="/img/open-comerce.png"  alt="" />
             <div className='proyect__skills__container'>
               {/* <p className='proyect__skills'>HTML</p> */}
