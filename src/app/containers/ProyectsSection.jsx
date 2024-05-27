@@ -38,7 +38,7 @@ const ProyectsSection = () => {
               <p className='proyect__skills'>PostgreSQL</p>
               <p className='proyect__skills'>Prisma</p>
             </div>
-            <p>Este proyecto es rompecabezas basado en el juego 15.<br /> cuenta con 3 niveles, una tabla de scores mediante API CRUD<br /> y aún no esta completo</p>
+            <p>Este proyecto es rompecabezas basado en el juego 15.<br /> cuenta con 3 niveles, una tabla de scores mediante una API. <br /></p>
             <a href="https://jigsaw-asdjosegarcia.vercel.app/" target="_blank">
               <button className='card__button'>{"Probar  >>"}</button>
             </a>
@@ -48,7 +48,7 @@ const ProyectsSection = () => {
           </div>
           <div className='proyect__card'>
             {/* ley de hom */}
-            <h2 className='card__title'>Open-Trade</h2>
+            <h2 className='card__title'>Open Trade</h2>
             <img src="/img/open-comerce.png"  alt="" />
             <div className='proyect__skills__container'>
               {/* <p className='proyect__skills'>HTML</p> */}
@@ -57,7 +57,7 @@ const ProyectsSection = () => {
               <p className='proyect__skills'>Nextjs 14.1.4</p>
               <p className='proyect__skills'>Prisma 5.12.1</p>
             </div>
-            <p>Este proyecto es un market-place COMPLETO,<br /> cuenta con varias funcionalidades al estilo Mercado Libre<br /> incluyendo perfiles de usuarios </p>
+            <p>Este proyecto es un market-place COMPLETO,<br /> cuenta con varias funcionalidades al estilo Mercado Libre<br /> incluyendo perfiles de usuarios. </p>
             <a href="https://open-comerce.vercel.app/" target="_blank">
               <button className='card__button'>{"Probar  >>"}</button>
             </a>
