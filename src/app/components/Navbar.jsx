@@ -2,14 +2,14 @@ import React from 'react'
 import './Navbar.css'
 import LinkedinLogo from '../SVG/LinkedinLogo'
 import GithubLogo from '../SVG/GithubLogo'
-import Alert from './Alert'
+// import Alert from './Alert'
 
 const Navbar = () => {
   return (
     <>
 
     <nav className='nav'>
-    <Alert></Alert>
+    {/* <Alert></Alert> */}
       <div className='nav__container'>
       <div className='nav__name--email'>
         <h3>Jose Maria Garcia</h3>
