@@ -57,6 +57,11 @@
     height: 60px ;
     margin: 0 1rem ;
 }
+.about__skills--subtitle{
+ width: 100%;
+ font-size: 1.9rem;
+ margin-top: 5rem;
+}
 
 .about__title--skills{
 grid-area: title2;
@@ -64,10 +69,12 @@ grid-area: title2;
 .about__skills__container{
     grid-area: skills;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start ;
+
     width: 100%;
     flex-wrap: wrap; /* que el contenido se distribulla en varias filas */
-    padding:5% 0;
+    padding-bottom:5%;
 }
 .about__skills__container svg {
     margin: 3.3rem;
