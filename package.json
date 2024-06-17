@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "astro": "^4.10.2",
     "next": "14.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18",
