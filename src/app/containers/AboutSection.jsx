@@ -97,7 +97,7 @@ const AboutSection = () => {
                     </div>
                     <div className='skill__card '>{/* se desactivo el color de fondo para darle un gris*/}
                         <img src="img/icons/my-sql.png" alt="" />
-                        <p>mySQL</p>
+                        <p>MySQL</p>
                     </div>
 
 
