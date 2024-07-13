@@ -5,7 +5,6 @@ import NextjsLogo from '../SVG/NextjsLogo'
 import ReactLogo from '../SVG/ReactLogo'
 import PrismaLogo from '../SVG/PrismaLogo'
 import AstroLogo from '../SVG/AstroLogo'
-import MysqlLogo from '../SVG/MysqlLogo'
 // import GithubLogo from '../SVG/GithubLogo'
 
 

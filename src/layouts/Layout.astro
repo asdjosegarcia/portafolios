@@ -1,0 +1,35 @@
+---
+import '../styles/normalize.css';
+import '../styles/globals.css';
+// import {  Roboto,Rubik } from 'next/font/google'
+
+
+const { title } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<!-- <meta name="generator" content={Astro.generator} /> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- fuente rubik de google -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		 
+		<title>{title}</title> <!-- the title that we provide when we call "Layout will appear here" -->
+	</head>
+	<body>
+		<slot/>
+	</body>
+</html>
+<style is:global>
+      html {
+		font-family: 'Rubik', sans-serif; /* fuente de google  */
+		/* background-color: none; */
+      }
+
+</style>

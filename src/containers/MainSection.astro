@@ -1,0 +1,42 @@
+---
+---
+<section id='mainSection' class='mainSection__container'>
+    <h2 class='main__greeting'>Hola, soy</h2>
+    <h1 class='main__name'>JOSE GARCIA</h1>
+    <h2 class='main__job'>Programador Web FullStack</h2>
+    <h2 class='main__welcome'>Bienvenido a mi portafolio :)</h2>
+</section>
+
+<style>
+    .mainSection__container{
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+.main__greeting{
+    font-weight: 500;
+}
+.main__name{
+    font-size: 7rem;
+    letter-spacing: .5rem;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -2px -2px 4px rgba(255, 255, 255, 0.9); */
+}
+@media screen and (max-width: 1100px) {
+    .main__name{
+        font-size: 6rem;
+        text-shadow: .9rem .5rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9)/* , -1px -1px 4px rgba(255, 255, 255, 0.9) */ ;
+
+    }
+}
+@media screen and (min-width: 1100px) {
+    .main__name{
+        text-shadow: .9rem .5rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9) ;
+    }
+    
+}
+    </style>
