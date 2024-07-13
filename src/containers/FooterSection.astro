@@ -1,0 +1,79 @@
+---
+import GitHubSVG from "../SVG/GitHubSVG.astro"
+import LinkedinSVG from "../SVG/LinkedinSVG.astro"
+import AstroSVG from "../SVG/AstroSVG.astro"
+---
+<section id="footerSection" class='footerSection__container'>
+    <div class='footer__created--with'>
+    <p>Proyecto creado con &nbsp;</p>
+    <AstroSVG height="24px" fill="#fff"/>
+    <!-- <ReactLogo fill={"cbd5e1"}></ReactLogo> -->
+    <!-- <NextjsLogo ></NextjsLogo> -->
+
+    </div>
+    <p>Jose Maria Garcia / asdjosegarcia</p>
+    <ul class='footer__github--linkedin'>
+      <a target="_blank" href={"https://github.com/asdjosegarcia  "}>
+        <GitHubSVG ></GitHubSVG>
+        Github
+      </a>
+      <a target="_blank" href={"https://www.linkedin.com/in/asdjosegarcia"}>
+        <LinkedinSVG></LinkedinSVG>
+        Linkedin
+      </a>
+    </ul>
+    <div>
+
+
+    </div>
+  </section>
+
+  <style>
+    .footerSection__container{
+    /* background-color: #0f172a; */
+    /* background-color: rgb(10, 11, 26); */
+    background-color: #0f172a1a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid rgba(160, 179, 204, 0.103);
+}
+.footerSection__container p{
+    margin: .5rem 0 0 0;
+}
+.footer__created--with{
+    display: flex;
+    align-items: center;
+    margin-top: .4rem;
+}
+.footerSection__container .footer__created--with p{
+    margin-top: 0;
+}
+.footer__created--with svg{
+    width: 24px;
+    height: 24px;
+    /* fill: #cbd5e1; */
+    margin-left: 10px;
+}
+/* .footer__created--with .nextjs--img{
+    width: 32px;
+    height: 32px;
+
+} */
+.footer__github--linkedin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    fill: #fff;
+}
+.footer__github--linkedin a{
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    color: white;
+
+}
+  </style>
