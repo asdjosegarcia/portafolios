@@ -1,6 +1,7 @@
 ---
 import GitHubSVG from '../SVG/GitHubSVG.astro'
 import LinkedinSVG from '../SVG/LinkedinSVG.astro'
+
 // import '../styles/Navbar.css'
 ---
 <nav class='nav'>
@@ -35,12 +36,11 @@ import LinkedinSVG from '../SVG/LinkedinSVG.astro'
 
       <ul class='nav__github--linkedin'>
         <a target="_blank" href={"https://github.com/asdjosegarcia  "}>
-          <GitHubSVG></GitHubSVG>
+          <GitHubSVG  height="1.5rem"/>
           Github
         </a>
         <a target="_blank" href={"https://www.linkedin.com/in/asdjosegarcia"}>
-          <LinkedinSVG/>
-          <!-- <LinkedinLogo></LinkedinLogo> -->
+          <LinkedinSVG  height="1.5rem"/>
           Linkedin
         </a>
       </ul>
@@ -55,8 +55,7 @@ import LinkedinSVG from '../SVG/LinkedinSVG.astro'
 .nav__container{
     display: flex;
     justify-content: space-between;
-    background: rgba(10, 11, 26, 0.904);
-    /* background-color: blur(5px);; */
+    /* background: rgba(10, 11, 26, 0.904); */
     backdrop-filter: blur(10px);
     color: aliceblue;
     padding: 10px auto 10px auto;
