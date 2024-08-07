@@ -1,0 +1,25 @@
+---
+const {title,...rest}=Astro.props
+
+---
+<span class="skill-card-fake-shadow skill__card" {...rest}>
+    <div class="skill-card">
+        <slot />
+        <p>{title}</p>
+    </div>
+</span>
+
+
+<style>
+ .skill__card{
+    margin: 1rem;
+    border: 3px solid rgb(54, 120, 151);
+    border-radius: 5px;
+}
+.skill__card p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9);
+}
+</style>

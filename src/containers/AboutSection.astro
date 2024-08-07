@@ -1,11 +1,32 @@
 ---
 import ReactSVG from "../SVG/ReactSVG.astro"
 import AstroSVG from "../SVG/AstroSVG.astro"
+import JavaScriptSVG from "../SVG/JavaScriptSVG.astro"
+import CssSVG from "../SVG/CssSVG.astro"
+import HTML5 from "../SVG/HTML5.astro"
+import SkillCard from "../components/SkillCard.astro"
+import TypeScriptSVG from "../SVG/TypeScriptSVG.astro"
+import TailwindCssSVG from "../SVG/TailwindCssSVG.astro"
+import PrismaOrmSVG from "../SVG/PrismaOrmSVG.astro"
+import ExpressJsSVG from "../SVG/ExpressJsSVG.astro"
+import NextJsSVG from "../SVG/NextjsSVG.astro"
+import NodeJsSVG from "../SVG/NodeJsSVG.astro"
+import SqlSVG from "../SVG/SqlSVG.astro"
+import MySqlSVG from "../SVG/MySqlSVG.astro"
+import WebpackSVG from "../SVG/WebpackSVG.astro"
+import ESlintSVG from "../SVG/ESlintSVG.astro"
+import LinuxSVG from "../SVG/LinuxSVG.astro"
+import GitHubTwoSVG from "../SVG/GitHubTwoSVG.astro"
+import GitSVG from "../SVG/GitSVG.astro"
+import UmlSVG from "../SVG/UmlSVG.astro"
+import BemSVG from "../SVG/BemSVG.astro"
+import ArduinoSVG from "../SVG/ArduinoSVG.astro"
+
 
 ---
 
 <section id="aboutSection" class='aboutSection__container'>
-    <div class='aboutSection__info'>
+    <div class='aboutSection__info' >
         <h2 class='about__title about__title--about'>Sobre mí</h2>
         <img class="about__perfile--picture" src="/img/linux 2.jpg" alt="" />
         <ul>
@@ -27,7 +48,7 @@ import AstroSVG from "../SVG/AstroSVG.astro"
                 </p>
             </li>
             <li class='about__item'>
-                <div>
+                <div  >
                     <svg viewBox="0 -960 960 960" fill="#ffffff"><path d="M480-260q68 0 123.5-38.5T684-400H276q25 63 80.5 101.5T480-260ZM312-520l44-42 42 42 42-42-84-86-86 86 42 42Zm250 0 42-42 44 42 42-42-86-86-84 86 42 42ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z" /></svg>
                 </div>
                 <p class='about__hobbies'>
@@ -38,111 +59,79 @@ import AstroSVG from "../SVG/AstroSVG.astro"
         <h2 class='about__title about__title--skills'>Habilidades en programación</h2>
         <div class='about__skills__container'>
             <h2 class='about__skills--subtitle'>Front-end:</h2>
-            <div class='skill__card'>
-                {/* css3 */}
-                <svg width="24px" height="24px" viewBox="0 0 32 32" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0" /><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" /><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8" /> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD" /> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white" /> </g></svg>
-                <p>CSS3</p>
-            </div>
-            <div class='skill__card'>
-                {/* html */}
-                <svg width="800px" height="800px" viewBox="0 0 32 32" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0" /><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" /><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26" /> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529" /> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white" /> </g></svg>
-                <p>HTML5</p>
-            </div>
-            <div class='skill__card'>
-                {/* js */}
-                <svg class='js--img' width="800px" height="800px" viewBox="0 0 32 32" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0" /><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" /><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" fill="#FFCA28" /> <path d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z" fill="#3E3E3E" /> <path d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z" fill="#3E3E3E" /> </g></svg>
-                <p>JavaScript</p>
-            </div>
+            <SkillCard title="CSS3"  client:visible>
+                <CssSVG  class="svg" />
+            </SkillCard>
+            <SkillCard title="HTML5" client:visible>
+                <HTML5 class="svg" />
+            </SkillCard>
+            <SkillCard title="JavaScript" client:visible>
+                <JavaScriptSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="TypeScript" client:visible>
+                 <TypeScriptSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="React" client:visible>
+                <ReactSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="Astro" client:visible>
+                <AstroSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="TailwindCSS" client:visible>
+                <TailwindCssSVG class="svg"/>
+            </SkillCard>
 
-            <div class='skill__card '>{/* se desactivo el color de fondo para darle un gris*/}
-                <img src="img/icons/typescript-icon-svgrepo-com.png" alt="" />
-                <p>TypeScript</p>
-            </div>
-            <div class='skill__card'>
-                {/* react */}
-                <ReactSVG fill="#53C1DE"></ReactSVG>
-                <p>React</p>
-            </div>
 
-            <div class='skill__card ' >
-                <svg   viewBox="0 0 85 107" fill="none" ><path d="M27.5894 91.1365C22.7555 86.7178 21.3444 77.4335 23.3583 70.7072C26.8503 74.948 31.6888 76.2914 36.7005 77.0497C44.4375 78.2199 52.0359 77.7822 59.2232 74.2459C60.0454 73.841 60.8052 73.3027 61.7036 72.7574C62.378 74.714 62.5535 76.6892 62.318 78.6996C61.7452 83.5957 59.3086 87.3778 55.4332 90.2448C53.8835 91.3916 52.2437 92.4167 50.6432 93.4979C45.7262 96.8213 44.3959 100.718 46.2435 106.386C46.2874 106.525 46.3267 106.663 46.426 107C43.9155 105.876 42.0817 104.24 40.6845 102.089C39.2087 99.8193 38.5066 97.3081 38.4696 94.5909C38.4511 93.2686 38.4511 91.9345 38.2733 90.6309C37.8391 87.4527 36.3471 86.0297 33.5364 85.9478C30.6518 85.8636 28.37 87.6469 27.7649 90.4554C27.7187 90.6707 27.6517 90.8837 27.5847 91.1341L27.5894 91.1365Z" fill="white" /><path d="M27.5894 91.1365C22.7555 86.7178 21.3444 77.4335 23.3583 70.7072C26.8503 74.948 31.6888 76.2914 36.7005 77.0497C44.4375 78.2199 52.0359 77.7822 59.2232 74.2459C60.0454 73.841 60.8052 73.3027 61.7036 72.7574C62.378 74.714 62.5535 76.6892 62.318 78.6996C61.7452 83.5957 59.3086 87.3778 55.4332 90.2448C53.8835 91.3916 52.2437 92.4167 50.6432 93.4979C45.7262 96.8213 44.3959 100.718 46.2435 106.386C46.2874 106.525 46.3267 106.663 46.426 107C43.9155 105.876 42.0817 104.24 40.6845 102.089C39.2087 99.8193 38.5066 97.3081 38.4696 94.5909C38.4511 93.2686 38.4511 91.9345 38.2733 90.6309C37.8391 87.4527 36.3471 86.0297 33.5364 85.9478C30.6518 85.8636 28.37 87.6469 27.7649 90.4554C27.7187 90.6707 27.6517 90.8837 27.5847 91.1341L27.5894 91.1365Z" fill="url(#paint0_linear_1_59)" /><path d="M0 69.5866C0 69.5866 14.3139 62.6137 28.6678 62.6137L39.4901 29.1204C39.8953 27.5007 41.0783 26.3999 42.4139 26.3999C43.7495 26.3999 44.9325 27.5007 45.3377 29.1204L56.1601 62.6137C73.1601 62.6137 84.8278 69.5866 84.8278 69.5866C84.8278 69.5866 60.5145 3.35233 60.467 3.21944C59.7692 1.2612 58.5911 0 57.0029 0H27.8274C26.2392 0 25.1087 1.2612 24.3634 3.21944C24.3108 3.34983 0 69.5866 0 69.5866Z" fill="white" /><defs><linearGradient id="paint0_linear_1_59" x1="22.4702" y1="107" x2="69.1451" y2="84.9468" gradientUnits="userSpaceOnUse"><stop stop-Color="#D83333" /><stop offset="1" stop-Color="#F041FF" /></linearGradient></defs></svg>
-                <p>Astro</p>
-            </div>
-            <div class='skill__card ' >
-                <svg width="800px" height="800px" viewBox="0 0 32 32"  /* fill="#44a8b3" */   ><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" fill="#44a8b3" /></svg>
-                <p>TailwindCSS</p>
-            </div>
 
             <h2 class='about__skills--subtitle'>Back-end y Bases de Datos:</h2>
-            <div class='skill__card'>
-                {/* prisma */}
-                <svg viewBox="0 0 256 310" width="256"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path fill="#fff" d="M254.313 235.519L148 9.749A17.063 17.063 0 00133.473.037a16.87 16.87 0 00-15.533 8.052L2.633 194.848a17.465 17.465 0 00.193 18.747L59.2 300.896a18.13 18.13 0 0020.363 7.489l163.599-48.392a17.929 17.929 0 0011.26-9.722 17.542 17.542 0 00-.101-14.76l-.008.008zm-23.802 9.683l-138.823 41.05c-4.235 1.26-8.3-2.411-7.419-6.685l49.598-237.484c.927-4.443 7.063-5.147 9.003-1.035l91.814 194.973a6.63 6.63 0 01-4.18 9.18h.007z"/></svg>
-                <p>PrismaORM</p>
-            </div>
-            <div class='skill__card'>
-                {/* Exp */}
-                <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M24 18.588a1.53 1.53 0 0 1-1.895-.72l-3.45-4.771l-.5-.667l-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92l-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83l3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27c1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.08 4.08 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.42 5.42 0 0 1-2.589 3.957a6.27 6.27 0 0 1-7.306-.933a6.58 6.58 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88 88 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278c-2.882-.04-4.944 2.094-5.071 5.264z"/></svg>
-                <p>ExpressJS</p>
-            </div>
-            <div class='skill__card'>
-                {/* nextjs */}
-                <svg class='nextjs--img' aria-labelledby="next-logo-title" fill="none" height="80" role="img" viewBox="0 0 80 80" width="80"  ><title id="next-logo-title">The brand mark for Next.js</title><path d="M66.4478 70.0092L30.7296 24H23.9998V55.9867H29.3836V30.8372L62.2216 73.2645C63.7033 72.2728 65.1149 71.1847 66.4478 70.0092Z" fill="url(#paint0_linear_4_275)"></path><path d="M56.4444 24H51.1111V56H56.4444V24Z" fill="url(#paint1_linear_4_275)"></path><defs><linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_4_275" x1="48.4443" x2="64.2219" y1="51.7778" y2="71.3333"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear_4_275" x1="53.7778" x2="53.6886" y1="24" y2="47.5002"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg>
-                <p>NextJS</p>
-            </div>
-            <div class='skill__card'>
-                {/* nodejs*/}
-                <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" viewBox="0 0 448 512"><path fill="#65a30d" d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-61.7-36.5c-9.2-5.2-4.7-7-1.7-8c12.3-4.3 14.8-5.2 27.9-12.7c1.4-.8 3.2-.5 4.6.4l47.4 28.1c1.7 1 4.1 1 5.7 0l184.7-106.6c1.7-1 2.8-3 2.8-5V149.3c0-2.1-1.1-4-2.9-5.1L226.8 37.7c-1.7-1-4-1-5.7 0L36.6 144.3c-1.8 1-2.9 3-2.9 5.1v213.1c0 2 1.1 4 2.9 4.9l50.6 29.2c27.5 13.7 44.3-2.4 44.3-18.7V167.5c0-3 2.4-5.3 5.4-5.3h23.4c2.9 0 5.4 2.3 5.4 5.3V378c0 36.6-20 57.6-54.7 57.6c-10.7 0-19.1 0-42.5-11.6l-48.4-27.9C8.1 389.2.7 376.3.7 362.4V149.3c0-13.8 7.4-26.8 19.4-33.7L204.6 9c11.7-6.6 27.2-6.6 38.8 0l184.7 106.7c12 6.9 19.4 19.8 19.4 33.7v213.1c0 13.8-7.4 26.7-19.4 33.7L243.4 502.8c-5.9 3.4-12.6 5.2-19.4 5.2m149.1-210.1c0-39.9-27-50.5-83.7-58c-57.4-7.6-63.2-11.5-63.2-24.9c0-11.1 4.9-25.9 47.4-25.9c37.9 0 51.9 8.2 57.7 33.8c.5 2.4 2.7 4.2 5.2 4.2h24c1.5 0 2.9-.6 3.9-1.7s1.5-2.6 1.4-4.1c-3.7-44.1-33-64.6-92.2-64.6c-52.7 0-84.1 22.2-84.1 59.5c0 40.4 31.3 51.6 81.8 56.6c60.5 5.9 65.2 14.8 65.2 26.7c0 20.6-16.6 29.4-55.5 29.4c-48.9 0-59.6-12.3-63.2-36.6c-.4-2.6-2.6-4.5-5.3-4.5h-23.9c-3 0-5.3 2.4-5.3 5.3c0 31.1 16.9 68.2 97.8 68.2c58.4-.1 92-23.2 92-63.4"/></svg>
-                <p>NodeJS</p>
-            </div>
-            <div class='skill__card '>{/* se desactivo el color de fondo para darle un gris*/}
-                <svg width="800px" height="800px" viewBox="-1.61 0 70 70"  ><path d="m -68.256041,544.14439 c -3.2225,-0.64097 -6.0047,-2.84478 -7.3573,-5.82793 -0.595,-1.31236 -0.8482,-2.55217 -0.8438,-4.13316 0.012,-4.5438 2.8692,-8.33798 7.3079,-9.70579 0.8177,-0.25196 1.3573,-0.31847 2.611,-0.32182 0.8692,-0.002 1.8277,0.0437 2.1301,0.10227 l 0.5497,0.10649 0.6765,-1.31365 c 1.3815,-2.68242 3.5345,-4.78981 6.3178,-6.18379 2.2961,-1.15 3.739,-1.48443 6.4043,-1.48443 1.8668,0 2.2999,0.045 3.5043,0.36412 5.2011,1.37813 9.255,5.45998 10.5309,10.60353 0.3195,1.2879 0.4789,4.17568 0.293,5.30849 l -0.1269,0.77355 0.7284,0.163 c 1.8256,0.40854 3.4011,1.68396 4.2066,3.40532 0.7966,1.70226 0.6508,3.90495 -0.3651,5.51414 -0.5185,0.82136 -1.535,1.73424 -2.3832,2.14031 -0.4348,0.20813 -0.8979,0.43475 -1.0292,0.50361 -0.2947,0.15465 -32.3751,0.14085 -33.155,-0.0143 z m 33.351,-1.89876 c 0.9026,-0.44879 1.7953,-1.45217 2.1662,-2.43497 0.7697,-2.03891 -0.2571,-4.40792 -2.3055,-5.31934 -0.5173,-0.23017 -0.9037,-0.28342 -1.9824,-0.27321 -0.737,0.007 -1.3399,-0.0395 -1.3399,-0.10328 0,-0.0638 0.1369,-0.66194 0.3042,-1.32926 0.428,-1.70717 0.4237,-4.42927 -0.01,-6.09178 -0.9556,-3.66584 -3.4332,-6.72357 -6.8221,-8.4192 -1.4892,-0.74512 -2.9056,-1.08594 -4.841,-1.16493 -2.8639,-0.11687 -4.8633,0.33445 -7.0666,1.59507 -2.5693,1.47003 -4.784,4.13385 -5.6425,6.78661 -0.1651,0.51018 -0.3653,0.9268 -0.4449,0.92583 -0.08,-9.6e-4 -0.5467,-0.13408 -1.038,-0.29579 -1.3668,-0.44991 -3.6978,-0.42255 -5.0619,0.0594 -1.3731,0.48513 -2.3616,1.10694 -3.3908,2.13292 -1.5427,1.53788 -2.3996,3.63391 -2.3996,5.86959 0,3.32007 1.8288,6.23059 4.8041,7.64574 1.71,0.81331 1.1183,0.78892 18.4849,0.76186 l 15.941,-0.0248 0.6444,-0.32043 z m -45.9938,-6.42576 c -5.7671,-0.78155 -10.2061,-2.22963 -13.4896,-4.40056 -1.3548,-0.89576 -2.2902,-1.89766 -2.8176,-3.01787 l -0.3929,-0.83466 0.036,-22.59585 0.036,-22.59585 0.3281,-0.61562 c 0.8294,-1.55619 2.4465,-2.88407 5.0211,-4.12288 3.2554,-1.56646 7.0095,-2.54578 12.2408,-3.19328 2.1543,-0.26664 9.47,-0.21948 11.6809,0.0753 8.1415,1.08546 14.4594,3.74551 16.4734,6.93577 0.7936,1.25717 0.7731,0.80148 0.7731,17.22791 l 0,15.08135 -0.4466,0.0692 c -0.2456,0.038 -0.8021,0.10712 -1.2366,0.15352 -4.4834,0.47873 -9.1329,3.57818 -11.5162,7.67699 l -0.488,0.8391 -1.9169,0.0905 c -2.265,0.10697 -3.4191,0.39711 -5.1411,1.29243 -2.9567,1.53725 -5.0699,4.20232 -5.9316,7.48077 -0.238,0.90554 -0.3084,1.56192 -0.3132,2.92023 l -0.01,1.75213 -0.7594,-0.0162 c -0.4176,-0.009 -1.3777,-0.1 -2.1335,-0.20243 z m 11.7239,-20.8271 c -1.0818,-0.91805 -2.0174,-1.7137 -2.0791,-1.7681 -0.062,-0.0544 0.1631,-0.2602 0.4994,-0.45733 0.7458,-0.43708 1.7061,-1.48313 2.1139,-2.30274 0.9965,-2.00287 0.9743,-4.49403 -0.058,-6.47634 -1.135,-2.1802 -3.5103,-3.3239 -6.2014,-2.986 -1.4735,0.18503 -2.3966,0.59832 -3.3701,1.50899 -1.5366,1.4374 -2.0688,2.84774 -1.988,5.26837 0.046,1.37622 0.095,1.62372 0.4886,2.45901 0.8471,1.79787 2.6182,3.14163 4.4225,3.35531 0.6788,0.0804 0.7377,0.1249 2.0865,1.57538 l 1.3881,1.49264 2.3321,0 2.3322,0 -1.9669,-1.66919 z m -5.885,-4.6866 c -0.9451,-0.47951 -1.304,-1.30103 -1.304,-2.98527 0,-1.09589 0.053,-1.41584 0.3224,-1.96387 0.4309,-0.875 1.29,-1.40105 2.1328,-1.30604 0.829,0.0934 1.2599,0.42875 1.6984,1.32149 0.3327,0.67762 0.3808,0.93439 0.3769,2.01347 0,1.33108 -0.2403,2.01354 -0.9098,2.63622 -0.6994,0.65058 -1.42,0.73892 -2.3167,0.284 z m -9.5093,3.18974 c 2.485,-0.57319 3.8348,-2.65434 3.1192,-4.80889 -0.3603,-1.0849 -1.1219,-1.76252 -2.9819,-2.65327 -0.859,-0.41138 -1.6272,-0.83198 -1.7071,-0.93468 -0.3128,-0.40184 -0.3121,-0.66784 0,-1.03351 0.484,-0.56269 1.5858,-0.5896 3.0776,-0.0752 l 1.138,0.39245 -0.039,-1.51877 -0.039,-1.51878 -0.7558,-0.17965 c -1.143,-0.2717 -3.6136,-0.2584 -4.5856,0.0247 -1.949,0.56765 -2.976,1.84152 -2.9696,3.68323 0.01,1.89537 0.8605,2.79385 3.8676,4.06981 1.2722,0.53982 1.4179,1.54865 0.2807,1.94362 -0.5263,0.18278 -0.6761,0.17922 -1.5089,-0.0358 -0.5086,-0.13132 -1.2802,-0.42314 -1.7148,-0.64849 l -0.7902,-0.40974 0,1.64418 0,1.64418 0.7902,0.21996 c 0.4346,0.12098 0.852,0.2415 0.9276,0.26783 0.3141,0.10941 3.3435,0.0524 3.8879,-0.0732 z m 26.5512,-1.4376 0,-1.44294 -2.1988,0 -2.1987,0 0,-4.74107 0,-4.74107 -1.7865,0 -1.7865,0 0,6.18401 0,6.184 3.9853,0 3.9852,0 0,-1.44293 z m -10.5815,-24.74151 c 3.5835,-0.41532 6.5241,-1.16648 8.3827,-2.14132 1.2211,-0.64044 1.5139,-0.87116 1.9833,-1.56285 1.4515,-2.13894 -1.7987,-4.28958 -8.0986,-5.35876 -5.9187,-1.0045 -13.7186,-0.77727 -18.7108,0.54509 -10.3005,2.7285 -6.2399,7.74058 7.0717,8.7287 2.1847,0.16217 7.109,0.0514 9.3717,-0.21086 z" fill="#00bcf2" transform="translate(97.599 -474.268)" /></svg>
-                <p>SQL</p>
-            </div>
-            <div class='skill__card '>{/* se desactivo el color de fondo para darle un gris*/}
-                <img src="img/icons/my-sql.png" alt="" />
-                <p>MySQL</p>
-            </div>
+
+            <SkillCard title="PrismaORM" client:visible>
+                <PrismaOrmSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="ExpressJS" client:visible>
+                <!-- <PrismaOrmSVG class="svg"/> -->
+                 <ExpressJsSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="NextJS" client:visible>
+                <NextJsSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="NodeJS" client:visible>
+                <NodeJsSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="SQL" client:visible>
+                <SqlSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="MySQL" client:visible>
+                <!-- <SqlSVG class="svg"/> -->
+                 <MySqlSVG class="svg"/>
+            </SkillCard>
 
 
             <h2 class='about__skills--subtitle'>Herramientas y Otras Tecnologías:</h2>
-            <div class='skill__card'>
-                {/* webpack */}
-                <img src="img/icons/webpack-svgrepo-com.png" alt="" />
-                <p>Webpack</p>
-            </div>
-            <div class='skill__card'>
-                {/* eslint */}
-                <svg width="800px" height="800px" viewBox="0 0 32 32" ><path d="M29.832,16.7,23.478,27.417A1.256,1.256,0,0,1,22.36,28H9.647a1.262,1.262,0,0,1-1.118-.59L2.173,16.71a1.256,1.256,0,0,1,0-1.272L8.527,4.676A1.344,1.344,0,0,1,9.647,4H22.356a1.344,1.344,0,0,1,1.118.678l6.354,10.786a1.2,1.2,0,0,1,0,1.238ZM24.57,20.9V11.286L16,6.466l-8.56,4.82V20.9L16,25.719Z" /* style="fill:#4b32c3" */ fill="#4b32c3" /><polygon points="21.802 19.188 16.055 22.423 10.313 19.188 10.313 12.718 16.055 9.482 21.802 12.718 21.802 19.188" /* style="fill:#8080f2" */ fill="#8080f2" /></svg>
-                <p>ESlint</p>
-            </div>
-            <div class='skill__card'>
-                {/* linux */}
-                <img src="/img/icons/linux-tux.png" alt="" />
-                <p>Linux</p>
-            </div>
-            <div class='skill__card'>
-                {/* github */}
-                <img class='github--img' src="img/icons/github-142-svgrepo-com.png" alt="" />
-                <p>github</p>
-            </div>
-            <div class='skill__card'>
-                {/* git */}
-                <svg width="800px" height="800px" viewBox="0 0 32 32" fill="none"><path d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z" fill="#EE513B" /><path d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z" fill="white" /></svg>
-                <p>git</p>
-            </div>
-            <div class='skill__card '>
-                <img src='/img/icons/uml.png'></img>
-                <p>UML</p>
-            </div>
-            <div class='skill__card '>
-                <img src='/img/icons/BEM.png'></img>
-                <p>BEM</p>
-            </div>
-            <div class='skill__card'>
-                {/* arduino */}
-                <img src="/img/icons/arduino-svgrepo-com.png" alt="" />
-                <p>Arduino</p>
-            </div>
+            <SkillCard title="Webpack" client:visible>
+                 <WebpackSVG class="svg"/>
+            </SkillCard>
+            <SkillCard title="Linux" client:visible>
+                <LinuxSVG class="svg"/>
+           </SkillCard>
+           <SkillCard title="ESlint" client:visible>
+            <ESlintSVG class="svg"/>
+           </SkillCard>
+           <SkillCard title="Github" client:visible>
+            <GitHubTwoSVG class="svg"/>
+           </SkillCard>
+           <SkillCard title="Git" client:visible>
+            <GitSVG class="svg"/>
+           </SkillCard>
+           <SkillCard title="UML" client:visible>
+            <UmlSVG class="svg"/>
+           </SkillCard>
+           <SkillCard title="BEM" client:visible>
+            <BemSVG class="svg"/>
+           </SkillCard>
+           <SkillCard title="Arduino" client:visible>
+            <ArduinoSVG class="svg"/>
+           </SkillCard>
 
             {/* <div class='skill__card learning'>
                 <div class='card__message'>No disponible. Aun</div>
@@ -208,11 +197,7 @@ import AstroSVG from "../SVG/AstroSVG.astro"
     display: flex;
     align-items: center;
 }
-.about__item svg {
-    width: 60px ;
-    height: 60px ;
-    margin: 0 1rem ;
-}
+
 .about__skills--subtitle{
  width: 100%;
  font-size: 1.9rem;
@@ -265,12 +250,12 @@ grid-area: title2;
 }
 
 
-.about__skills__container .skill__card p{
+/* .about__skills__container .skill__card p{
     text-align: center;
     font-size: 1.5rem;
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9);
-}
+} */
 
 /*///////////////////////////////////////////////////estados  */
 .about__skills__container .learning{
