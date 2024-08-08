@@ -13,12 +13,10 @@
     "@astrojs/check": "^0.8.1",
     "astro": "^4.10.2",
     "normalize.css": "^8.0.1",
-    "react-dom": "^18",
-    "typescript": "^5.5.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
     "eslint-config-next": "14.0.0",
     "react-helmet": "^6.1.0",
     "vercel": "^32.7.2"
