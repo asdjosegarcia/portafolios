@@ -1,27 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../layouts/Navbar.astro'; 
-import MainSection from '../containers/MainSection.astro';
-import AboutSection from '../containers/AboutSection.astro';
-import ProyectsSection from '../containers/ProyectsSection.astro';
-import PreFooterSection from '../containers/PreFooterSection.astro';
-import FooterSection from '../containers/FooterSection.astro';
-import Background from '../containers/Background.astro';
-
-
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../layouts/Navbar.astro";
+import MainSection from "../containers/MainSection.astro";
+import AboutSection from "../containers/AboutSection.astro";
+import ProyectsSection from "../containers/ProyectsSection.astro";
+import PreFooterSection from "../containers/PreFooterSection.astro";
+import FooterSection from "../containers/FooterSection.astro";
+import Background from "../containers/Background.astro";
+import LazyLoading from "../components/LazyLoading.astro";
 ---
+
 <Layout title="@asdjosegarcia">
-	<Background/>
-	<Navbar />
-	<MainSection />
-	<AboutSection />
-	<ProyectsSection />
-	<PreFooterSection />
-	<FooterSection />
-
+  <Background />
+  <Navbar />
+  <LazyLoading>
+    <MainSection class="hidden" />
+    <AboutSection  />
+    <ProyectsSection  />
+    <PreFooterSection class="hidden" />
+    <FooterSection class="hidden" />
+  </LazyLoading>
 </Layout>
-
+<script>
+  // observer.observe(elemento);
+</script>
 
 <style>
- 
+
 </style>

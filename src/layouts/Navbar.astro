@@ -56,13 +56,13 @@ import LinkedinSVG from '../SVG/LinkedinSVG.astro'
     display: flex;
     justify-content: space-between;
     /* background: rgba(10, 11, 26, 0.034); */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
     color: aliceblue;
     padding: 10px auto 10px auto;
     align-items: center; 
-    border-bottom: 2px solid rgba(160, 179, 204, 0.486);
+    /* border-bottom: 1px solid rgba(160, 179, 204, 0.486); */
     width: 100vw;
-    box-shadow: 0 10px 10px -5px rgba(255, 255, 255, 0.096);
+    box-shadow: 0 10px 10px -5px rgba(255, 255, 255, 0.020);
     z-index: 1;
 }
 
@@ -165,6 +165,9 @@ svg {
 
 
   @media  screen and (max-width:1200px){
+    .nav__container{
+    backdrop-filter: blur(2px);
+    }
     .nav__sections{
         display: none;
     }

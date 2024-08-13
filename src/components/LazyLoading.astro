@@ -1,0 +1,43 @@
+---
+
+---
+
+<div>
+  <slot/>
+
+</div>
+<script>
+  function checkVisibility(entries) { //"entries" is an array with all observed elements
+  entries.forEach(entry => { // each entrie from entries
+    if (entry.isIntersecting) {
+      console.log("visible");
+      entry.target.classList.add("lazy__loading-active"); //add class active
+    } else {
+      console.log("NO visible");
+      entry.target.classList.remove("lazy__loading-active"); //remove cclass active
+    }
+  });
+}
+
+let observer = new IntersectionObserver(checkVisibility, {}); //we creates a instancia of intersection observer, using function  "checkVisibility" 
+let elements = document.querySelectorAll(".lazy__loading"); //alocate all elements with ".default" class, in a node list(similar to array)
+
+elements.forEach(element => {//for each element in elemnts in node list
+  observer.observe(element);//we indicate a new element to observe
+});
+</script>
+<style>
+    :global(.lazy__loading)  {
+    /* background-color: red; */
+    /* display: none; */
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.3s ease-out;
+  }
+  :global(.lazy__loading-active)  {
+    visibility: visible;
+    transform: scale(1);
+    /* display: inline; */
+  }
+
+</style>

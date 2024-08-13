@@ -2,7 +2,7 @@
 const {title,...rest}=Astro.props
 
 ---
-<span class="skill-card-fake-shadow skill__card" {...rest}>
+<span class="skill__card lazy__loading" {...rest}>
     <div class="skill-card">
         <slot />
         <p>{title}</p>
@@ -15,6 +15,9 @@ const {title,...rest}=Astro.props
     margin: 1rem;
     border: 3px solid rgb(54, 120, 151);
     border-radius: 5px;
+    backdrop-filter: blur(2px);
+    z-index: -1;
+
 }
 .skill__card p{
     text-align: center;
