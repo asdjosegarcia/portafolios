@@ -1,36 +1,38 @@
 ---
-const {title,...rest}=Astro.props
-
+const { title, ...rest } = Astro.props;
 ---
+
 <span class="skill__card lazy__loading" {...rest}>
-    <div class="skill-card">
-        <slot />
-        <p>{title}</p>
-    </div>
+  <div class="skill-card">
+    <slot />
+    <p>{title}</p>
+  </div>
 </span>
 
-
 <style>
- .skill__card{
+  .skill__card {
     margin: 1rem;
     border: 3px solid rgb(54, 120, 151);
-    border-radius: 5px;
-    backdrop-filter: blur(2px);
-    z-index: -1;
+    border-radius: 20px 2px 20px 2px;
+    background-color: #0000009f;
 
-}
-.skill__card p{
+    /* backdrop-filter: blur(2px); */
+    z-index: -1;
+  }
+  .skill__card p {
     text-align: center;
     font-size: 1.5rem;
     color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), -1px -1px 4px rgba(255, 255, 255, 0.9);
-}
-@media screen and (min-width: 1100px) {
-    .skill__card{
+    text-shadow:
+      1px 1px 4px rgba(0, 0, 0, 0.9),
+      -1px -1px 4px rgba(255, 255, 255, 0.9);
+  }
+  @media screen and (min-width: 1100px) {
+    .skill__card {
+      /* backdrop-filter: blur(5px); */
+    background: linear-gradient(326deg, rgba(2,0,36,0) 11%, rgba(0, 0, 0, 0.726) 35%, rgba(0, 0, 0, 0.747) 62%, rgba(0,0,0,0) 95%); 
 
-    backdrop-filter: blur(5px);
+    }
 
-}
-}
-
+  }
 </style>
