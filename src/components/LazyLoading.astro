@@ -10,11 +10,11 @@
   function checkVisibility(entries) { //"entries" is an array with all observed elements
   entries.forEach(entry => { // each entrie from entries
     if (entry.isIntersecting) {
-      console.log("visible");
+      // console.log("visible");
       
       entry.target.classList.add("lazy__loading-active"); //add class active
     } else {
-      console.log("NO visible");
+      // console.log("NO visible");
       entry.target.classList.remove("lazy__loading-active"); //remove cclass active
     }
   });
