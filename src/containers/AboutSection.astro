@@ -111,6 +111,9 @@ import ArduinoSVG from "../SVG/ArduinoSVG.astro"
 
 
             <h2 class='about__skills--subtitle'>Herramientas y Otras Tecnologías:</h2>
+            <SkillCard title="Figma">
+                <img class="img" src="/img/icons/figma.png" alt="">
+           </SkillCard>
             <SkillCard title="Webpack">
                  <WebpackSVG class="svg"/>
             </SkillCard>
@@ -226,7 +229,8 @@ grid-area: title2;
     flex-wrap: wrap; /* que el contenido se distribulla en varias filas */
     padding-bottom:5%;
 }
-.about__skills__container svg, .svg  {
+.about__skills__container svg, .svg, img {
+    object-fit: contain;
     margin: 3rem;
     width: 5.7rem;
     height: 6rem;
