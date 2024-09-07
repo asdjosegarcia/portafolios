@@ -229,12 +229,14 @@ grid-area: title2;
     flex-wrap: wrap; /* que el contenido se distribulla en varias filas */
     padding-bottom:5%;
 }
-.about__skills__container svg, .svg, img {
-    object-fit: contain;
+.about__skills__container svg, 
+.svg, 
+.about__skills__container img {
     margin: 3rem;
     width: 5.7rem;
     height: 6rem;
-}
+    object-fit: contain;
+    }
 
 /*///////////////////////////////////////////////////estados  */
 .about__skills__container .learning{
@@ -296,7 +298,9 @@ grid-area: title2;
     box-shadow: .5rem .3rem 0px rgb(44, 96, 121), 10px 10px 4px rgba(0, 0, 0, 0.9) ;
 
     }
-    .skill__card svg, .svg{
+    .skill__card svg, 
+    .svg, 
+    .about__skills__container img{
         margin: 2.8rem;
         width: 4rem;
         height: 4rem;
